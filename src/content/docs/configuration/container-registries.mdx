@@ -1,0 +1,20 @@
+---
+title: Container registries
+description: Documentation
+# layout: ../../layouts/MainLayout.astro
+relativeUrl: /configuration/container-registries.mdx
+---
+
+import { t } from "i18next";
+
+You can authorize {t('appName')} to pull from private container registries when creating your workspaces.
+
+A container registry is a repository—or collection of repositories—used to store and access container images. Container registries can support container-based application development, often as part of DevOps processes. Learn more about container registries <a href="https://www.redhat.com/en/topics/cloud-native-apps/what-is-a-container-registry" target="_blank">here</a>.
+
+You can add any number of container registries for your personal workspaces, or you can add them on a team level.
+
+## Adding a new container registry
+
+When adding a new container registry, you have to specify the URL to your registry, as well as your registry credentials.
+
+![Add a container registry](/src/assets/img/configuration/add-container-registry.png)

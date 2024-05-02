@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Galano-Grotesque";
+  src: url("/fonts/Galano-Grotesque/Galano-Grotesque-Regular.otf")
+    format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Galano-Grotesque";
+  src: url("/fonts/Galano-Grotesque/Galano-Grotesque-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Galano-Grotesque";
+  src: url("/fonts/Galano-Grotesque/Galano-Grotesque-SemiBold.otf")
+    format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Galano-Grotesque";
+  src: url("/fonts/Galano-Grotesque/Galano-Grotesque-Bold.otf")
+    format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Galano-Grotesque";
+  src: url("/fonts/Galano-Grotesque/Galano-Grotesque-ExtraBold.otf")
+    format("opentype");
+  font-weight: 800;
+}
+* {
+  font-family: "Galano-Grotesque", sans-serif;
+}
+
+/* Dark mode colors. */
+:root {
+  --font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  --font-body: system-ui, var(--font-fallback);
+  --font-mono: "IBM Plex Mono", Consolas, "Andale Mono WT", "Andale Mono",
+    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco,
+    "Courier New", Courier, monospace;
+  --sl-color-accent-low: #430b58;
+  --sl-color-accent: #7f3f98;
+  --sl-color-accent-high: #b17ac7;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #e9eef6;
+  --sl-color-gray-2: #bcc3cc;
+  --sl-color-gray-3: #808d9e;
+  --sl-color-gray-4: #4e5969;
+  --sl-color-gray-5: #2e3948;
+  --sl-color-gray-6: #1d2735;
+  --sl-color-black: #14181f;
+}
+/* Light mode colors. */
+:root[data-theme="light"] {
+  --sl-color-accent-low: #b17ac7;
+  --sl-color-accent: #7f3f98;
+  --sl-color-accent-high: #41254c;
+  --sl-color-white: #14181f;
+  --sl-color-gray-1: #1d2735;
+  --sl-color-gray-2: #2e3948;
+  --sl-color-gray-3: #4e5969;
+  --sl-color-gray-4: #808d9e;
+  --sl-color-gray-5: #bcc3cc;
+  --sl-color-gray-6: #e9eef6;
+  --sl-color-gray-7: #f4f6fa;
+  --sl-color-black: #ffffff;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+code {
+  font-family: var(--font-mono);
+}
+
+table,
+pre {
+  font-family: var(--font-mono);
+}

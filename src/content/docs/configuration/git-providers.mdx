@@ -1,0 +1,40 @@
+---
+title: Git providers
+description: Documentation
+# layout: ../../layouts/MainLayout.astro
+relativeUrl: /configuration/git-providers.mdx
+---
+
+import { t } from "i18next";
+
+{t('appName')} supports integrations for your [GitHub](/configuration/git-providers#github), [GitLab](/configuration/git-providers#gitlab) and [Bitbucket](/configuration/git-providers#bitbucket) projects.
+Each Git provider includes options for connecting and removing accounts, as well as editing permissions granted to {t('appName')}. Managing Git providers is available in the _My Account_ page.
+![Git providers](/src/assets/img/configuration/git-providers.png)
+
+## Connect your GitHub account
+
+The permissions you can grant to {t('appName')} for your GitHub account include:
+
+- Read-only access to your email addresses (_required_)
+- Read-only access to your profile information (_required_)
+- Read/write access to code in your public repositories and organizations
+- Read/write access to code in your private repositories and organizations
+
+![GitHub permissions](/src/assets/img/configuration/github-permissions.png)
+
+## Connect your GitLab account
+
+The permissions you can grant to {t('appName')} for your GitLab account include:
+
+- Read-only access to your profile information (_required_)
+- Read-only access to private repositories using Git-over-HTTP (_required_)
+- Read/write access to private repositories using Git-over-HTTP
+- Read/write access to the API, including all groups and projects, the container registry, and the package registry
+
+## Connect your Bitbucket account
+
+The permissions you can grant to {t('appName')} for your Bitbucket account include:
+
+- Read-only access to your email addresses (_required_)
+- Read-only access to your repositories (_required_)
+- Read/write access to your repositories

@@ -1,0 +1,39 @@
+---
+title: Welcome to official Codeanywhere docs
+description: Here you’ll find articles and tutorials to help you get started with the Codeanywhere platform. These include everything from creating workspaces to setting up your editor!
+template: splash
+hero:
+  tagline: This guide is a comprehensive look at the capabilities of Codeanywhere, and everything else you’ll need to know.
+  image:
+    file: ../../assets/img/image.png
+  actions:
+    - text: Get Started
+      link: /editor
+      icon: right-arrow
+      variant: primary
+    - text: Contact Our Support
+      link: https://starlight.astro.build
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Next steps
+
+<CardGrid >
+<Card title="Start Workspace" icon="rocket">
+    Quickly launch a [workspace](/workspaces) from a Git repository or template.
+</Card>
+<Card title="IDEs" icon="laptop">
+    Access your workspaces using VS Code for web or via various local [IDEs](/editor).
+</Card>
+<Card title="Manage Teams" icon="random">
+    Learn to configure and manage team settings and permissions.
+</Card>
+<Card title="Customize with Dotfiles" icon="setting">
+    Customize your workspace with [dotfiles](/configuration/dotfiles/) for terminal and IDE settings.
+</Card>
+	{/* <Card title="Read the docs" icon="open-book">
+		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	</Card> */}
+</CardGrid>

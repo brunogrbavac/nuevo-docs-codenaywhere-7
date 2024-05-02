@@ -1,0 +1,45 @@
+---
+title: Connect via SSH
+description: Documentation
+# layout: ../../layouts/MainLayout.astro
+relativeUrl: /workspaces/connect-via-ssh.mdx
+---
+
+You can connect to any of your workspaces via SSH.
+
+There are two ways of establishing an SSH connection and both can be found in the SSH section of each workspaces' menu.
+
+#### 1. Using your Public SSH Key
+
+[Add your public key(s)](/configuration/ssh-keys) in the SSH Keys section to connect to your workspaces using the public key authentication method. This is the equivalent of adding your public key to the `authorized_keys` files.
+
+![Public key SSH access](/src/assets/img/workspaces/ssh-public-key.png)
+
+#### 2. Using an Access Token
+
+Using the Access Token to SSH into a workspace is recommended for quick access, when you want to share your session with a colleague or when installing an SSH key locally is not possible. The Access Token will refresh on every workspace start.
+
+![Access token SSH access](/src/assets/img/workspaces/ssh-access-token.png)
+
+## Connecting with VSCode
+
+Connecting your local VSCode to a workspace requires a few simple steps.
+
+1. Make sure that the [Remote Explorer extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-explorer) is installed in your VSCode.
+2. Add a new SSH connection
+3. When prompted for the SSH connection URL, paste your prefered method of connecting to the workspace. _(Not sure which method to choose? Find out more in the sections above.)_
+
+And that's it! VSCode will automatically install everything it needs to run inside the workspace and you can use it just as you would locally.
+
+Find out more about the extension [here](https://code.visualstudio.com/docs/remote/ssh).
+
+## Connecting with Jetbrains IDEs
+
+Connecting your local Jetbrains IDEs to a workspace requires a few simple steps.
+
+1. Download the [Jetbrains Gateway](https://www.jetbrains.com/remote-development/gateway/) app to your local machine.
+2. Add a new connection.
+3. When prompted for the SSH connection URL, paste your prefered method of connecting to the workspace. _(Not sure which method to choose? Find out more in the sections above.)_
+4. Choose an IDE you want installed in your workspace.
+
+And that's it! The Jetbrains Gateway will automatically install everything it needs to run inside the workspace and you can use it just as you would locally.

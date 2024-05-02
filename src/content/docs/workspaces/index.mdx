@@ -1,0 +1,14 @@
+---
+title: Repeatable development environments that just work
+description: Documentation
+# layout: ../../layouts/MainLayout.astro
+relativeUrl: /workspaces/index.mdx
+---
+
+import { t } from "i18next";
+
+A workspace encapsulates a complete development environment that is created from the configuration present in your repository. It contains all the infrastructure (such as databases, message services, memory stores, etc.) as well as all development tools and customizations needed to create and run projects.
+
+{t('appName')} supports the [Devcontainer standard](https://containers.dev/) which means that all repositories that have the devcontainer configuration inside, can be run inside {t('appName')} without worrying about any additional setup.
+
+Projects that don't have a devcontainer configuration will be given a default workspace configuration that should be enough to run most simple projects in any popular programming language. But to use the {t('appName')} in its full potential, we recommend that a configuration file is added to the project. In the configuration file a complete development environment can be described and it becomes a part of the source code.

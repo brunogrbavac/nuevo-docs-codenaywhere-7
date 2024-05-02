@@ -1,0 +1,50 @@
+---
+title: IDE in the browser
+description: Documentation
+# layout: ../../layouts/MainLayout.astro
+relativeUrl: /editor/index.mdx
+---
+
+import { t } from "i18next";
+
+While it is recommended to establish an SSH connection to your workspaces from your local device, {t('appName')} allows you to access your workspaces directly in the browser, with a fully-featured collaborative IDE.
+
+## Accessing the IDE
+
+After you [created a workspace](/workspaces/creating-a-new-workspace) you can click the _Open_ button from the menu on the right side of the workspace card or just click on the name of the workspace.
+
+![Open IDE](/src/assets/img/editor/open-ide.png)
+
+## Sidebar
+
+### File explorer
+
+The File Explorer is used to browse, open, and manage all of the files and folders in your project. You can do many things from the File Explorer widget:
+
+- Create, delete, and rename files and folders.
+- Move files and folders with drag and drop.
+- Use the context menu to explore all options.
+
+You can _drag and drop_ files from your computer into the file explorer to use them in your project.
+
+### Source control
+
+The IDE has integrated source control management and includes Git support by default. The widget icon will always indicate the number of changes in your repository.
+
+By expanding the widget, you can view a more detailed distribution of your changes:
+
+- Changes
+- Staged changes
+- Merge changes
+
+The widget header includes multiple useful options:
+
+- Toggle between _Tree view_ and _List view_ of your repository changes
+- Commit your changes
+- Refresh the Source Control widget
+- Add a _Signed-off-by_ trailer at the end of the commit message
+- Menu with the most common git commands
+
+### Extensions
+
+You can browse and install extensions from within your IDE. Find more information [here](/editor/extensions).
