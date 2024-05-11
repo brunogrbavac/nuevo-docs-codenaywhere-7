@@ -1,8 +1,14 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-
-// https://astro.build/config
+import astroI18next from "astro-i18next";
+import { config as dotenvConfig } from "dotenv";
+dotenvConfig();
 export default defineConfig({
+  outDir: "dist/apps/docs",
+  server: {
+    port: Number(process.env.PORT) || 1234,
+    host: true,
+  },
   integrations: [
     starlight({
       title: "Documentation",
@@ -12,13 +18,13 @@ export default defineConfig({
       social: {
         email: "mailto:support@codeanywhere.net",
         "x.com": "https://x.com/codeanywhere",
-        linkedin: "https://www.linkedin.com/codeanywhere",
         github: "https://github.com/codeanywhere",
       },
       customCss: ["./src/styles/index.css"],
       components: {
         ThemeProvider: "./src/components/ThemeProvider.astro",
         ThemeSelect: "./src/components/ThemeSelect.astro",
+        Head: "./src/components/Head.astro",
       },
       sidebar: [
         {
@@ -35,5 +41,6 @@ export default defineConfig({
         },
       ],
     }),
+    astroI18next(),
   ],
 });
