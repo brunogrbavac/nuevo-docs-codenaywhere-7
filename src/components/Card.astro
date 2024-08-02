@@ -1,0 +1,10 @@
+--- 
+import { Card as Default } from '@astrojs/starlight/components';
+const { url, title, description, ...props } = Astro.props;
+---
+
+<a href={url} style="text-decoration: none; color: inherit;">
+  <Default title={title} {...props}>
+    <slot/>
+  </Default>
+</a>

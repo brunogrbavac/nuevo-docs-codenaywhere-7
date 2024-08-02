@@ -22,6 +22,7 @@ export default defineConfig({
       },
       customCss: ["./src/styles/index.css"],
       components: {
+        Card: './src/components/Card.astro',
         ThemeProvider: "./src/components/ThemeProvider.astro",
         ThemeSelect: "./src/components/ThemeSelect.astro",
         Head: "./src/components/Head.astro",

@@ -12,28 +12,38 @@ hero:
       icon: right-arrow
       variant: primary
     - text: Contact Our Support
-      link: mailto:support@codeanywhere.net
+      link: https://codeanywhere.com/support
       icon: external
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { CardGrid } from "@astrojs/starlight/components";
+import Card from "./src/components/Card.astro";
 
-## Next steps
-
-<CardGrid >
-<Card title="Start Workspace" icon="rocket">
-    Quickly launch a [workspace](/workspaces) from a Git repository or template.
-</Card>
-<Card title="IDEs" icon="laptop">
-    Access your workspaces using VS Code for web or via various local [IDEs](/editor).
-</Card>
-<Card title="Manage Teams" icon="random">
-    Learn to configure and manage team settings and permissions.
-</Card>
-<Card title="Customize with Dotfiles" icon="setting">
-    Customize your workspace with [dotfiles](/configuration/dotfiles/) for terminal and IDE settings.
-</Card>
-	{/* <Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card> */}
+<CardGrid>
+  <Card url="/workspaces" title="Start Workspace" icon="rocket">
+    <span>
+      Quickly launch a <strong>workspace</strong> from a Git repository or
+      template.
+    </span>
+  </Card>
+  <Card url="/editor" title="IDEs" icon="laptop">
+    <span>
+      Access your workspaces using VS Code for web or via various local{" "}
+      <strong>IDEs</strong>.
+    </span>
+  </Card>
+  <Card url="/editor/collaboration/" title="Manage Teams" icon="random">
+    Learn to configure and manage <strong>team</strong> settings and
+    permissions.
+  </Card>
+  <Card
+    url="/configuration/dotfiles/"
+    title="Customize with Dotfiles"
+    icon="setting"
+  >
+    <span>
+      Customize your workspace with <strong>dotfiles</strong> for terminal and
+      IDE settings.
+    </span>
+  </Card>
 </CardGrid>
